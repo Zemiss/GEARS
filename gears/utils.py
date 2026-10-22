@@ -209,7 +209,7 @@ def make_GO(data_path, pert_list, data_name, num_workers=25, save=True):
     Creates Gene Ontology graph from a custom set of genes
     """
 
-    fname = './data/go_essential_' + data_name + '.csv'
+    fname = os.path.join(data_path, 'go_essential_' + data_name + '.csv')
     if os.path.exists(fname):
         return pd.read_csv(fname)
 

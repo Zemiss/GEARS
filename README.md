@@ -61,6 +61,12 @@ pert_data.new_data_process(dataset_name = 'XXX', adata = adata)
 pert_data.load(data_path = './data/XXX')
 ```
 
+### VCC / Lingshu-Cell data alignment
+
+Use `python scripts/vcc.py prepare`, `train`, and `predict` to train on the official
+VCC train/validation split and export per-cell H5AD predictions on the Lingshu-Cell
+gene panel. See [the VCC guide](docs/vcc.md) for server commands and evaluation.
+
 ### Demos
 
 | Name | Description |
